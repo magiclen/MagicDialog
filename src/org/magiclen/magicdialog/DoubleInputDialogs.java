@@ -110,6 +110,7 @@ public class DoubleInputDialogs implements Cloneable {
         final Font font = new Font(fontFamily, fontSize);
 
         final Dialog<String[]> dialog = new Dialog<>();
+        dialog.initOwner(owner);
         dialog.setTitle(title);
         dialog.setHeaderText(header);
         dialog.setGraphic(new ImageView(this.getClass().getResource("/org/magiclen/magicdialog/did.png").toString()));
